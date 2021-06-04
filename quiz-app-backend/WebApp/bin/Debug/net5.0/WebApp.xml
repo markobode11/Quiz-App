@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApp</name>
+    </assembly>
+    <members>
+        <member name="T:WebApp.ApiControllers.Identity.AccountController">
+            <summary>
+            API controller for registering and logging in.
+            </summary>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.#ctor(Microsoft.AspNetCore.Identity.SignInManager{Domain.App.Identity.AppUser},Microsoft.AspNetCore.Identity.UserManager{Domain.App.Identity.AppUser},Microsoft.Extensions.Logging.ILogger{WebApp.ApiControllers.Identity.AccountController},Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Identity.RoleManager{Domain.App.Identity.AppRole})">
+            <summary>
+            Constructor for controller.
+            </summary>
+            <param name="signInManager">Sign in manager</param>
+            <param name="userManager">User manager</param>
+            <param name="logger">Logger</param>
+            <param name="configuration">Configuration</param>
+            <param name="roleManager">Role manager</param>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.Login(PublicApi.DTO.v1.Account.Login)">
+            <summary>
+            Try to log in user
+            </summary>
+            <param name="dto">Login dto</param>
+            <returns>JWT response with token</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.Register(PublicApi.DTO.v1.Account.Register)">
+            <summary>
+            Try to register new user.
+            </summary>
+            <param name="dto">Register dto</param>
+            <returns>JWT response with token for new user</returns>
+        </member>
+    </members>
+</doc>

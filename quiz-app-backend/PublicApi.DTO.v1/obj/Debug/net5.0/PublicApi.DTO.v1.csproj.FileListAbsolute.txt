@@ -1,0 +1,15 @@
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\bin\Debug\net5.0\PublicApi.DTO.v1.deps.json
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\bin\Debug\net5.0\PublicApi.DTO.v1.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\bin\Debug\net5.0\ref\PublicApi.DTO.v1.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\bin\Debug\net5.0\PublicApi.DTO.v1.pdb
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\bin\Debug\net5.0\Domain.App.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\bin\Debug\net5.0\Domain.App.pdb
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\PublicApi.DTO.v1.csprojAssemblyReference.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\PublicApi.DTO.v1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\PublicApi.DTO.v1.AssemblyInfoInputs.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\PublicApi.DTO.v1.AssemblyInfo.cs
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\PublicApi.DTO.v1.csproj.CoreCompileInputs.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\PublicApi.DTO.v1.csproj.CopyComplete
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\PublicApi.DTO.v1.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\ref\PublicApi.DTO.v1.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\PublicApi.DTO.v1\obj\Debug\net5.0\PublicApi.DTO.v1.pdb

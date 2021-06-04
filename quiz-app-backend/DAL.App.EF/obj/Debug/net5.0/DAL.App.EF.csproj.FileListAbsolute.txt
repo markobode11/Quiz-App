@@ -1,0 +1,15 @@
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\bin\Debug\net5.0\DAL.App.EF.deps.json
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\bin\Debug\net5.0\DAL.App.EF.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\bin\Debug\net5.0\ref\DAL.App.EF.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\bin\Debug\net5.0\DAL.App.EF.pdb
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\bin\Debug\net5.0\Domain.App.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\bin\Debug\net5.0\Domain.App.pdb
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\DAL.App.EF.csprojAssemblyReference.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\DAL.App.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\DAL.App.EF.AssemblyInfoInputs.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\DAL.App.EF.AssemblyInfo.cs
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\DAL.App.EF.csproj.CoreCompileInputs.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\DAL.App.EF.csproj.CopyComplete
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\DAL.App.EF.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\ref\DAL.App.EF.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\DAL.App.EF\obj\Debug\net5.0\DAL.App.EF.pdb

@@ -1,0 +1,12 @@
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\bin\Debug\net5.0\Domain.App.deps.json
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\bin\Debug\net5.0\Domain.App.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\bin\Debug\net5.0\ref\Domain.App.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\bin\Debug\net5.0\Domain.App.pdb
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\obj\Debug\net5.0\Domain.App.csprojAssemblyReference.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\obj\Debug\net5.0\Domain.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\obj\Debug\net5.0\Domain.App.AssemblyInfoInputs.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\obj\Debug\net5.0\Domain.App.AssemblyInfo.cs
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\obj\Debug\net5.0\Domain.App.csproj.CoreCompileInputs.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\obj\Debug\net5.0\Domain.App.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\obj\Debug\net5.0\ref\Domain.App.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Domain.App\obj\Debug\net5.0\Domain.App.pdb

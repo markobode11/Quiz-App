@@ -1,0 +1,12 @@
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\bin\Debug\net5.0\Extensions.Base.deps.json
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\bin\Debug\net5.0\Extensions.Base.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\bin\Debug\net5.0\ref\Extensions.Base.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\bin\Debug\net5.0\Extensions.Base.pdb
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\obj\Debug\net5.0\Extensions.Base.csprojAssemblyReference.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\obj\Debug\net5.0\Extensions.Base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\obj\Debug\net5.0\Extensions.Base.AssemblyInfoInputs.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\obj\Debug\net5.0\Extensions.Base.AssemblyInfo.cs
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\obj\Debug\net5.0\Extensions.Base.csproj.CoreCompileInputs.cache
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\obj\Debug\net5.0\Extensions.Base.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\obj\Debug\net5.0\ref\Extensions.Base.dll
+C:\Users\marko\icd0009-2020s\Exam\ExamSolution\Extensions.Base\obj\Debug\net5.0\Extensions.Base.pdb
