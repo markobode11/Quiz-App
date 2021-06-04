@@ -1,0 +1,63 @@
+<!-- import html only view! -->
+<import from="./views/home/privacy.html" />
+<import from="./views/routers/answerable-router.html" />
+
+<!-- import viewmodel based view - dont use extension-->
+<import from="./views/identity/identity-login" />
+<import from="./views/identity/identity-register" />
+<import from="./views/home/home-index" />
+<import from="./views/statistics/statistics-index" />
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 nav">
+        <div class="container">
+            <a class="navbar-brand" load="home-index"><i class="fab fa-quora"></i>uiz App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" load="answerable-router">Quizes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" load="answerable-router/polls-index">Polls</a>
+                    </li>
+                    <li class="nav-item" if.bind="state.token != null">
+                        <a class="nav-link text-light" load="statistics-index">My statistics</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li show.bind="state.token == null" class="nav-item">
+                        <a class="nav-link text-light" load="identity-register"><i class="far fa-registered"></i> Register</a>
+                    </li>
+                    <li show.bind="state.token == null" class="nav-item">
+                        <a class="nav-link text-light" load="identity-login">Login <i class="fas fa-sign-in-alt"></i></a>
+                    </li>
+                    <li show.bind="state.token != null" class="nav-item">
+                        <a class="nav-link text-light" href="#">Hello ${state.firstname}</a>
+                    </li>
+                    <li show.bind="state.token != null" class="nav-item">
+                        <a class="nav-link text-light" click.delegate="logOut($event)">Logout <i class="fas fa-sign-out-alt"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <main role="main" class="pb-3">
+
+        <au-viewport default="home-index" name="my-app"></au-viewport>
+
+    </main>
+</div>
+
+<footer class="border-top footer text-light">
+    <div class="container">
+        &copy; 2021 - Quiz app - <a load="privacy">Privacy</a>
+    </div>
+</footer>

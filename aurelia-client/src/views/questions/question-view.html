@@ -1,0 +1,36 @@
+<h1>Question</h1>
+
+<hr>
+<div class="row">
+    <div class="col-md-6">
+        <form submit.trigger='onSubmit()'>
+            <div class='alert alert-danger' if.bind='errorMessage'>${errorMessage}</div>
+            <div class='alert alert-success' if.bind='message'>${message}</div>
+            <div class="form-group">
+                <label class="control-label" for="Name">Text</label>
+                <input value.bind='model.text' class="form-control" type="text" name="Name" id='Name' value="">
+            </div>
+            <h3>Answers</h3>
+            <div class="row mt-3" repeat.for="answer of model.answers" id=${$index}>
+                <div class="col-6 form-group form-check">
+                    <input disabled="${model.answers[$index].id != 0 ? 'disabled' : ''}" placeholder="Answer ${index + 1} here" value.bind='model.answers[$index].text'
+                        class="form-control" type="text" name="question" value="">
+                </div>
+                <div class="col-2" show.bind="model.type == 0">
+                    <label class="form-check-label" for="check1">Is Correct?</label>
+                    <input disabled="${model.answers[$index].id != 0 ? 'disabled' : ''}" checked.bind="model.answers[$index].isCorrect"  class="form-check-input" id="check1" type="checkbox">
+                </div>
+                <div click.delegate="removeAnswer($index, answer.id)" class="col-2 btn btn-danger"><i class="fas fa-trash-alt"></i> Remove</div>
+            </div>
+            <div click.delegate="increaseAnswerCounter()" class="btn btn-secondary form-check m-2"><i class="fas fa-plus"></i> Add another
+                answer</div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary form-control mt-3">
+            </div>
+            <div id='delete' class="btn btn-delete mt-3"
+              click.delegate='confirmDelete()'><i class="fas fa-trash-alt"></i> Delete this question</div>
+            <div id='confirm-delete' style="display: none;" class="btn btn-danger mt-3"
+              click.delegate="onDelete()"><i class="fas fa-check-double"></i> Are you sure?</div>
+        </form>
+    </div>
+</div>

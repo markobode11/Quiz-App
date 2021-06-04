@@ -1,0 +1,46 @@
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light"><i class="fas fa-chart-bar"></i> My statistics</h1>
+        </div>
+    </div>
+</section>
+
+<div class='alert alert-info' if.bind='message'>${message}</div>
+
+<div if.bind="polls.length != 0">
+    <h3>My completed polls</h3>
+    <div class="album py-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col mb-3" repeat.for='poll of polls'>
+              <div class="card shadow-sm">
+                <div class="card-body bg-app">
+                  <p class="card-text"><b>${poll.answerable.name}</b></p>
+                  <a load="/answerable-router/answer(${poll.answerableId})">Try again</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div if.bind="quizes.length != 0">
+    <h3>My completed quizes</h3>
+    <div class="album py-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col mb-3" repeat.for='quiz of quizes'>
+              <div class="card shadow-sm">
+                <div class="card-body bg-app">
+                  <p class="card-text"><b>${quiz.answerable.name}</b></p>
+                  <p class="card-text">Correct answers: ${quiz.correctAnswers}</p>
+                  <p class="card-text">Incorrect answers: ${quiz.incorrectAnswers}</p>
+                  <a load="/answerable-router/answer(${quiz.answerableId})">Try again</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

@@ -1,0 +1,97 @@
+<h1>Edit</h1>
+
+<hr>
+<h5 class="alert alert-info" if.bind="modelQuestions.length == 0">${`For this to be valid and available for users, atleast 1 question must be added!`}</h5>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <form submit.trigger='onSubmit()'>
+            <div class='alert alert-danger' if.bind='errorMessage'>${errorMessage}</div>
+            <div class='alert alert-success' if.bind='message'>${message}</div>
+            <div class="form-group">
+                <label class="control-label" for="Name">Name</label>
+                <input value.bind='model.name' class="form-control" type="text" name="Name" id='Name' value="">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Description">Description</label>
+                <textarea value.bind='model.description' class="form-control" type="text" id="Description"
+                    name="Description" value=""></textarea>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Type</label>
+                <select value.bind='model.type' class="form-select">
+                    <option selected="${model.type === 0 ? 'selected' : ''}" value="0">Quiz</option>
+                    <option selected="${model.type === 1 ? 'selected' : ''}" value="1">Poll</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary form-control mt-3"><i class="fas fa-save"></i> Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-3 mb-5">
+    <a click.delegate="backToList()">Back to List</a>
+</div>
+
+<hr />
+
+<div class="container form-group mt-2">
+    <div class="bg-1">
+        <h3>Add existing question</h3>
+
+        <div class='row'>
+            <div class="col-8">
+                <select class='form-select form-check' value.bind="questionToBeAdded">
+                    <option value="">Please select...</option>
+                    <option repeat.for="question of questions" model.bind="question">
+                        ${question.text} | ${question.type == 0 ? "Quiz question" : "Poll Question"}
+                    </option>
+                </select>
+            </div>
+            <div class='col-2'>
+                <button click.delegate="addExistingQuestion()" class="btn btn-info form-check col-sm"><i class="fas fa-plus"></i> Add</button>
+            </div>
+            <div class='col-2'>
+                <a click.delegate="viewExistingQuestion()" class="btn btn-warning form-check col-sm"><i class="far fa-eye"></i> View</a>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <div class="bg-2">
+        <div class='alert alert-danger' if.bind='secondErrorMessage'>${secondErrorMessage}</div>
+        <div class='row mt-3'>
+            <h3>Add new question</h3>
+            <div class="form-group col-8 form-check">
+                <input placeholder="Question text here" value.bind='newQuestionModel.text' class="form-control" type="text"
+                    name="question" id='question' value="">
+            </div>
+            <button click.delegate="addNewQuestion()" class="btn btn-info col-2"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        <div class="row mt-3" repeat.for="index of answerCounter" id=${index}>
+            <div class="col-6 form-group form-check">
+                <input placeholder="Answer ${index + 1} here" value.bind='newQuestionModel.answers[index].text' class="form-control" type="text" name="question"
+                    value="">
+            </div>
+            <div class="col-2" show.bind="model.type == 0">
+                <input class="form-check-input" id="check1" type="checkbox" checked.bind="newQuestionModel.answers[index].isCorrect">
+                <label class="form-check-label" for="check1">Is Correct?</label>
+            </div>
+            <button click.delegate="removeAnswer(index)" class="col-2 btn btn-danger"><i class="fas fa-trash-alt"></i> Remove</button>
+        </div>
+        <button click.delegate="increaseAnswerCounter()" class="btn btn-secondary form-check m-2"><i class="fas fa-plus"></i> Add another answer</button>
+    </div>
+</div>
+
+<hr />
+
+<div class="list-group mt-4 bg-3" if.bind="modelQuestions.length !== 0">
+    <h3>Questions already added:</h3>
+    <div class="list-group-item list-group-item-info" repeat.for="modelQuestion of modelQuestions">
+        ${modelQuestion.text} | <a class="btn btn-warning"
+            load="/answerable-router/question-view(${modelQuestion.id})"><i class="far fa-eye"></i> View</a>
+        <button class="btn btn-danger" click.delegate="removeQuestion(modelQuestion.id)"><i class="fas fa-trash-alt"></i> Remove</button>
+    </div>
+</div>

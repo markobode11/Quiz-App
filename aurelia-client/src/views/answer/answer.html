@@ -1,0 +1,36 @@
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">${model.name}</h1>
+            <p class="lead text-light">${model.description}</p>
+        </div>
+    </div>
+</section>
+
+<div class='alert alert-danger' if.bind='errorMessage'>${errorMessage}</div>
+
+<form>
+    <div class="form-group mt-3" repeat.for="question of questions">
+        <label class="mb-2" for="$index">${question.text}</label>
+        <select class="form-control" id="$index" value.bind="selectedAnswers[$index].answerId">
+            <option class="dropdown-item" value="0">Please select...</option>
+            <option class="dropdown-item" value="${answer.id}" repeat.for="answer of question.answers">${answer.text}
+            </option>
+        </select>
+    </div>
+
+    <button type="submit" id="submit" class="btn btn-primary form-control mt-3" click.delegate="submitAnswers($event)"> <i class="fas fa-check-double"></i> Submit
+        answers</button>
+</form>
+
+
+<section class="py-5 text-center container" if.bind="showResults === true">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Results</h1>
+            <p class="lead text-light">Correct answers: ${results.correctAnswers}</p>
+            <p class="lead text-light">Incorrect answers: ${results.incorrectAnswers}</p>
+        </div>
+        <a load="/answerable-router">Back to quizes</a>
+    </div>
+</section>

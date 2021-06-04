@@ -1,0 +1,70 @@
+{
+  "name": "exam-aurelia",
+  "description": "An Aurelia 2 client application.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "???"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "aurelia": "latest",
+    "aurelia-direct-router": "^2.0.0-alpha.3.1",
+    "bootstrap": "^5.0.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "jwt-decode": "^3.1.2",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@aurelia/testing": "latest",
+    "@aurelia/ts-jest": "latest",
+    "@aurelia/webpack-loader": "latest",
+    "@types/bootstrap": "^5.0.15",
+    "@types/jest": "^26.0.23",
+    "@types/jquery": "^3.5.5",
+    "@types/node": "^15.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "autoprefixer": "^10.2.5",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.26.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "htmlhint": "^0.14.2",
+    "jest": "^26.6.3",
+    "jest-transform-stub": "^2.0.0",
+    "postcss": "^8.2.15",
+    "postcss-loader": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.1.2",
+    "typescript": "^4.2.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.37.0",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "lint:js": "eslint src test --ext .js,.ts",
+    "lint:html": "htmlhint -c .htmlhintrc src",
+    "lint": "npm run lint:js && npm run lint:html",
+    "pretest": "npm run lint",
+    "start": "webpack serve",
+    "build": "rimraf dist && webpack --env production",
+    "analyze": "rimraf dist && webpack --env production --analyze",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "\\.(css|less|sass|scss|styl|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
+      "\\.(ts|html)$": "@aurelia/ts-jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/*.d.ts"
+    ]
+  }
+}

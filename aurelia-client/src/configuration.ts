@@ -1,0 +1,1 @@
+export const ApiBaseUrl = process.env.NODE_ENV === 'development' ? 'https://localhost:5001/api/v1' : 'https://gymbuddy2021.azurewebsites.net/api/v1'
